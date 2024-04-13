@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <style>
+        /* CSS styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Other CSS styles for your page */
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Flipkart Clone</h1>
+        <div>
+            <!-- Login Form -->
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <!-- Search Bar -->
+            <input type="text" id="searchBar" placeholder="Search...">
+            <button onclick="search()">Search</button>
+        </div>
+        <hr>
+        <div>
+            <!-- Categories -->
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Electronic Gadgets</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Men's</a></li>
+                <li><a href="#">Women's</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <!-- Cart -->
+            <h2>Cart</h2>
+            <ul id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for the functionality
+        function search() {
+            // Implement search functionality
+            alert('Searching...');
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Implement login functionality
+            alert('Logging in...');
+        });
+    </script>
+</body>
+
+</html>
